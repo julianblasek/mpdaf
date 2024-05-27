@@ -221,4 +221,4 @@ def main():
     end_program = time.time()
     print(f"Runtime: {end_program - start_program} Sekunden.")
     return 
-#main()
+main()
