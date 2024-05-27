@@ -44,22 +44,11 @@ def get_star_coord(cube,n):
     yx_coords = np.unravel_index(indices, data.shape)
     return [(y, x) for y, x in zip(*yx_coords)]
 
-#1 (H_a), 2 (H_ß), oder 3 (O_III)
-elton=2
-#------------------- Constants and Globals ---------------------------------------------
-if(elton==1):
-    path="/Users/julianblasek/ESO/code/apps/cluster_copy/neu/plots/h_alpha/"
-    path2="/Users/julianblasek/unityproject/v2/Assets/Data/H_alpha.txt"
-    lambda_0 = 6562.8      #H_alpha
-if(elton==2):
-    path="/Users/julianblasek/ESO/code/apps/cluster_copy/neu/plots/h_beta/"
-    path2="/Users/julianblasek/unityproject/v2/Assets/Data/H_beta.txt"
-    lambda_0 = 4861.333    #h_beta
-if(elton==3):
-    path="/Users/julianblasek/ESO/code/apps/cluster_copy/neu/plots/o_iii/"
-    path2="/Users/julianblasek/unityproject/v2/Assets/Data/O_III.txt"
-    lambda_0 = 5007        #O_III
-print("Es wurde Tor Nr.",elton," gewählt!")
+
+#------------------- Constants and Globals ----------------------------------------
+path="/Users/julianblasek/ESO/code/apps/cluster_copy/neu/plots/h_beta/"
+path2="/Users/julianblasek/unityproject/v2/Assets/Data/H_beta.txt"
+lambda_0 = 4861.333    #h_beta
 c = 299792.458         #km/s
 delta=18
 flux_threshold=150
