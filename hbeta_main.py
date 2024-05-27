@@ -46,8 +46,8 @@ def get_star_coord(cube,n):
 
 
 #------------------- Constants and Globals ----------------------------------------
-path="/Users/julianblasek/ESO/code/apps/cluster_copy/neu/plots/h_beta/"
-path2="/Users/julianblasek/unityproject/v2/Assets/Data/H_beta.txt"
+path="PathToSavedPlot"
+path2="PathToSavedTxt"
 lambda_0 = 4861.333    #h_beta
 c = 299792.458         #km/s
 delta=18
@@ -64,8 +64,7 @@ v_max=c*delta/lambda_0
 v_max_expansion=5000
 
 #path background subtracted path
-cube_path="/Users/julianblasek/ESO/code/data/HR_DEL_2.fits"
-cont_path="/Users/julianblasek/ESO/code/data/HR_DEL_cont2.fits"
+cube_path="BackSubCube"
 name = "HR_DEL"
 
 fullcube=Cube(cube_path)
