@@ -216,32 +216,4 @@ def main():
     end_program = time.time()
     print(f"Runtime: {end_program - start_program} Sekunden.")
     return 
-#main()
-
-
-#sn_map = abs(cube.data / np.sqrt(cube.var))
-#plot_sn_map(sn_map)
-#noisy_cube=Cube(cube_path)+Cube(cont_path)
-
-
-"""
-test_spec1=fullcube.sum(axis=(1, 2))
-test_spec2=noisy_cube.sum(axis=(1, 2))
-
-plt.figure(figsize=(10, 8))
-plt.title("Spectrum - HR DEL")
-test_spec2.plot(label="Raw")
-#test_spec1.plot(label="Shell")
-#plt.axvline(x=6562.8, color='red', linestyle='-', linewidth=2, label='H_alpha',ymax=0.5)
-#plt.axvline(x=4861.333, color='green', linestyle='-', linewidth=2, label='H_Beta',ymax=0.2)
-#plt.axvline(x=5007, color='purple', linestyle='-', linewidth=2, label='OIII',ymax=0.2)
-
-
-
-#plt.xlim(4800,7000)
-
-plt.ylim(-100000,3e6)
-plt.ylim(-100000,6.75e6)
-plt.legend(fontsize='xx-large', loc='upper right') 
-plt.show()
-"""
+main()
