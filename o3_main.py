@@ -44,21 +44,14 @@ def get_star_coord(cube,n):
     yx_coords = np.unravel_index(indices, data.shape)
     return [(y, x) for y, x in zip(*yx_coords)]
 
-#1 (H_a), 2 (H_ß), oder 3 (O_III)
-elton=3
+
 #------------------- Constants and Globals ---------------------------------------------
-if(elton==1):
-    path="/Users/julianblasek/ESO/code/apps/cluster_copy/neu/plots/h_alpha/"
-    path2="/Users/julianblasek/unityproject/v2/Assets/Data/H_alpha.txt"
-    lambda_0 = 6562.8      #H_alpha
-if(elton==2):
-    path="/Users/julianblasek/ESO/code/apps/cluster_copy/neu/plots/h_beta/"
-    path2="/Users/julianblasek/unityproject/v2/Assets/Data/H_beta.txt"
-    lambda_0 = 4861.333    #h_beta
-if(elton==3):
-    path="/Users/julianblasek/ESO/code/apps/cluster_copy/neu/plots/o_iii/"
-    path2="/Users/julianblasek/unityproject/v2/Assets/Data/O_III.txt"
-    lambda_0 = 5007        #O_III
+
+
+
+path="PathToSavedPlot"
+path2="PathToSavedTxt"
+lambda_0 = 5007        #O_III
 print("Es wurde Tor Nr.",elton," gewählt!")
 c = 299792.458         #km/s
 delta=18
@@ -75,8 +68,8 @@ v_max=c*delta/lambda_0
 v_max_expansion=5000
 
 #path background subtracted path
-cube_path="/Users/julianblasek/ESO/code/data/HR_DEL_2.fits"
-cont_path="/Users/julianblasek/ESO/code/data/HR_DEL_cont2.fits"
+cube_path="BackSubCube"
+
 name = "HR_DEL"
 
 fullcube=Cube(cube_path)
