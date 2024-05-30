@@ -6,7 +6,7 @@ from mpdaf.obj import iter_spe
 
 cube=Cube("PathToCube")
 
-def substract(cube,name):
+def substract(cube):
     cont = cube.clone(data_init=np.empty, var_init=np.zeros)
     i=0
     shape=cube.shape
