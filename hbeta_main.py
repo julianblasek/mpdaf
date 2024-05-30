@@ -64,7 +64,7 @@ v_max=c*delta/lambda_0
 v_max_expansion=5000
 
 #path background subtracted path
-cube_path="BackSubCube"
+cube_path="PathToCube"
 name = "HR_DEL"
 
 fullcube=Cube(cube_path)
