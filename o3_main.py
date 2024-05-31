@@ -52,7 +52,6 @@ def get_star_coord(cube,n):
 path="PathToSavedPlot"
 path2="PathToSavedTxt"
 lambda_0 = 5007        #O_III
-print("Es wurde Tor Nr.",elton," gewählt!")
 c = 299792.458         #km/s
 delta=18
 flux_threshold=150
